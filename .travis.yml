@@ -10,7 +10,7 @@
 
 script:
   # Publish changes to https://awesome-cl.com
-  - git clone --branch=gh-pages https://github.com/CodyReichert/awesome-cl dist
+  - git clone --branch=gh-pages https://github.com/$TRAVIS_REPO_SLUG dist
   - cp README.md dist/index.md
 deploy:
   provider: pages
